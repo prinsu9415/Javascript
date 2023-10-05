@@ -28,3 +28,7 @@
 // 
 const obj4 = Object.assign({},obj1,obj2)
 console.log(obj4);
+// most of the time we are using this method
+
+const obj5 = {...obj1,...obj2}
+console.log(obj5);
