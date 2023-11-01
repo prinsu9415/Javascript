@@ -1,0 +1,29 @@
+<form action="abcd.html" method="post" onsubmit="return cliickValue()">
+    <label>UserName</label>
+    <input type="text" name="username" id="username"/>
+    <br>
+    <label>Email</label>
+    <input type="text" name="email" id="email"/>
+    <br>
+    <input type="submit" value="Register" />
+
+</form>
+<script>
+    function cliickValue(){
+    const username = document.getElementById("username").value;
+    const email = document.getElementById("email").value
+    
+    if(username == ''){
+        alert("please enter your username")
+        return false;
+    }
+    else if(email == ''){
+        alert("Please enter your Email")
+        return false;
+    }
+    else{
+        alert("your are succesfully registerd")
+        return false;
+    }
+    }
+</script>
