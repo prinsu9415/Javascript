@@ -1,0 +1,39 @@
+ <!-- caqlculator multiply and divide -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcu</title>
+</head>
+<body>
+    <label>1st Number</label>
+    <input type="number" id="number1"/>
+    <br>
+    <label>2nd Number</label>
+    <input type="number" id="number2">
+   <br>
+   <button onclick="multiply()">Multiply</button>
+   <button onclick="divide()">Divide</button>
+   <p>Your Output is :
+   <span id="result"></span>
+</p>
+
+
+
+
+   <script>
+  function multiply(){
+   const num1=document.getElementById("number1").value
+   const num2=document.getElementById("number2").value
+   document.getElementById("result").innerHTML=num1*num2;
+    }
+    function divide(){
+        const num1=document.getElementById("number1").value
+   const num2=document.getElementById("number2").value
+   document.getElementById("result").innerHTML=num1/num2;
+    }
+   </script>
+    
+</body>
+</html>
