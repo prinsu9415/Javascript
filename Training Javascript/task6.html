@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapping</title>
+</head>
+<body>
+    <!-- swapping of  two number -->
+    <p> var a = 10</p>
+    <p> var b = 20</p>
+    <button onclick="swap()">swap</button>
+    <br>
+
+    
+    <script>
+         function swap(){
+            var a =10
+            var b= 20
+            var c = a
+            a = b
+            b = c
+             document.write( " var a = " +a,"<br>")
+             
+             document.write(" var b = " + b ,"<br>")
+             
+         }
+         //with argument
+         function swap1(d,e){
+          var f = d
+           d = e
+           e = f
+           document.write(d ,"<br>")
+           document.write(e,"<br")
+         }
+         swap1(2,3)
+
+         // with return
+          function swap2(g,h){
+            var i = g
+            g = h
+            h = i
+            var result = [g,h];
+            return result;
+          }
+          document.write(swap2(5,6))
+        
+    </script>
+    
+    
+</body>
+</html>
