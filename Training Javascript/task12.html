@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+  <form method="post" action="dgd.html" onsubmit="return myFuv()">
+    <input type="text" pattern="[A-Za-z]+" id="username" placeholder="Enter user name" required/>
+    <br>
+    <input  type="number" id="password" placeholder="Enter password"/>
+    <br>
+    <button  type="submit" >click</button>
+</form>
+
+    <script>
+        function myFuv(){
+          const username =  document.querySelector("#username").value
+          const password = document.querySelector("#password").value
+          if(username == ""){
+            alert("Please enter user name")
+            return false
+          }
+          else if(password ==""){
+            alert("Please enter password")
+            return false
+          }
+          else{
+            alert("Good work")
+            return false
+           
+          }
+        }
+    </script>
+    
+</body>
+</html>
