@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-repeat: no-repeat;
+           background-position: center;
+           background-size: 100%;
+        }
+h4{
+    color:rgb(25, 24, 23);
+     border: 1px solid orange;
+     border-radius: 8px;
+     backdrop-filter: blur(5px);
+     background-color: rgb(181, 232, 232);
+     padding: 5px;
+}
+    @keyframes movingBox{
+            0%{ 
+                border-color: aqua;
+                color: red;
+            }
+            10%{
+                border-color: rgb(17, 19, 19);
+                color: rgb(145, 255, 0);
+            }
+            20%{
+                border-color: rgb(255, 0, 221);
+                color:yellow;
+            }
+            30%{
+                border-color:blue;
+                color:rgb(140, 0, 255);
+            }
+            40%{
+                border-color: rgb(0, 255, 64);
+                color:rgb(0, 174, 255);
+            }
+            50%{
+                border-color: rgb(255, 0, 0);
+                color:rgb(255, 102, 0);
+            }
+            60%{
+                color:yellow;
+                border-color: aqua;
+            }
+            70%{
+                border-color: rgb(0, 255, 85);
+                color:rgb(30, 255, 0);
+            }
+            80%{
+                color:violet;
+                border-color: rgb(255, 0, 191);
+            }
+            90%{
+                color:pink;
+                border-color: rgb(187, 255, 0);
+            }
+            100%{
+                color:teal;
+                border-color:darkorange;
+            }
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+        }
+        #btn{
+           border-radius:5px;
+        }
+       
+        .container{
+            border:2px green inset;
+            background-color: black;
+            border-radius: 10px;
+            display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 300px;
+           width: 300px;
+           backdrop-filter: blur(1px);
+           background-color: rgba(255,255, 255, 0.2);
+           animation:movingBox 5s ease-in-out forwards;
+        }
+        .form{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            text-align: center;
+            border-radius: 10px;
+        }
+        #lobe{
+            border: 1px solid rgb(10, 237, 10);
+            border-radius: 5px;
+            backdrop-filter:blur(5px);
+            background-color: rgb(200, 213, 209);
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+
+        <div class="form">
+            <h4 >Check Your Love Score</h4>
+     
+        <input id="yourName" type="text" placeholder="Enter your Name"/>
+    <br>
+    <input id="loverName" type="text" placeholder="Enter your Lover Name"/>
+    <br>
+    <button id="btn">Check</button>
+
+    <p id="lobe"></p>
+</div>
+</div>
+    
+ <script>
+const score =Math.floor(Math.random()*100+1)
+const labhar = document.getElementById("lobe")
+document.getElementById("btn").addEventListener("click",function(){
+   labhar.innerHTML =`Your love score is ${score}`; 
+})
+
+ </script>   
+
+    
+</body>
+</html>
