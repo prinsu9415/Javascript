@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="displayName">Prince</div>
+   
+
+    <button onclick="changeName()">Change Name</button>
+    <button onclick="changeColor()">Change Color</button>
+    <br>
+
+    <p>  Welcome to my page p1 </p>
+<p>  Welcome to my page p2 </p>
+<p>  Welcome to my page p3 </p>
+<p>  Welcome to my page p4 </p>
+<p>  Welcome to my page p5 </p>
+<h6>  Welcome to my page </h6>
+<div id="printpargraphcontent"></div>
+<input type="button" value="print second paragraph" onclick="printparagraph()">
+
+
+
+    <script>
+        function changeName(){
+           var myname = document.getElementById("displayName")
+           myname.innerHTML ="Akhil"
+          
+        }
+        function changeColor(){
+           var myname = document.getElementById("displayName")
+           myname.style.color ="teal"
+          
+        }
+        function printparagraph(){
+    var myparagraph = document.getElementsByTagName("p")[1];
+    document.getElementById("printpargraphcontent").innerHTML = myparagraph.innerHTML;
+  }
+    </script>
+    
+</body>
+</html>
