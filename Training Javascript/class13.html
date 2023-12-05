@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <body onload="loadmydata()">
+
+  <div id="displaymydata">hjhjhjhjh</div>
+
+
+  <input type="text" id="mytext" onfocus="showmycontent()"  onblur="removemycontent()" onmouseover='javascript: document.getElementById("mytext").style.backgroundColor = "green";'
+    onmouseout="">
+    
+    <script>
+      function loadmydata(){
+        document.getElementById("displaymydata").innerHTML = "What is Lorem Ipsum .";
+      }
+
+      function showmycontent(){
+        document.getElementById("mytext").style.backgroundColor = "blue";
+      }
+      function removemycontent(){
+        document.getElementById("mytext").style.backgroundColor = "white";
+      }
+      function changeonmouseover(){
+        document.getElementById("mytext").style.backgroundColor = "white";
+      }
+      function changeonmouseout(){
+        document.getElementById("mytext").style.backgroundColor = "red";
+      }
+    </script>
+  </body>
+  
+</html>
