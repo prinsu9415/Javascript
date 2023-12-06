@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div id="showText"></div>
+    <input type="button" id="addEvent" value="Add Event"/>
+    <input type="button" id="removeEvent" value="Remove Event"/>
+
+    <!-- paragraph wala part -->
+
+    <p class="hello">welcome</p>
+    <p class="hello">welcome</p>
+    <p class="hello">welcome</p>
+    <p class="hello">welcome</p>
+    <p class="hello">welcome</p>
+    <p class="hello">welcome</p>
+
+
+    
+
+    <script>
+       const text = document.getElementById('showText')
+        document.getElementById('addEvent').addEventListener("click", showmyText)
+        function showmyText(){
+            let innrtext = text.innerText;
+            if(innrtext=="Hello world"){
+                text.innerHTML=''
+            }
+            else{
+                text.innerHTML="Hello world"
+            }
+        }
+        document.getElementById("removeEvent").addEventListener("click" ,removemyText)
+        function removemyText(){
+          text.innerHTML=""
+               }
+
+               // query selector wala part
+     const daty =    document.querySelectorAll("p")
+     for(var i =0; i<daty.length ;i++){
+        daty[i].style.color ="red"
+
+     }
+     
+    </script>
+</body>
+</html>
